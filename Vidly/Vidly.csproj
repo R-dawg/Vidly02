@@ -207,9 +207,38 @@
     <Compile Include="Migrations\201706060331508_MadeBirthdateNullable.Designer.cs">
       <DependentUpon>201706060331508_MadeBirthdateNullable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201706070204027_AddMovieDbSetToModel.cs" />
+    <Compile Include="Migrations\201706070204027_AddMovieDbSetToModel.Designer.cs">
+      <DependentUpon>201706070204027_AddMovieDbSetToModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706070219182_AddPropertiesToMovie.cs" />
+    <Compile Include="Migrations\201706070219182_AddPropertiesToMovie.Designer.cs">
+      <DependentUpon>201706070219182_AddPropertiesToMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706070259474_AddPropertiesToMovie1.cs" />
+    <Compile Include="Migrations\201706070259474_AddPropertiesToMovie1.Designer.cs">
+      <DependentUpon>201706070259474_AddPropertiesToMovie1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706070300290_PopulateGenreTypes.cs" />
+    <Compile Include="Migrations\201706070300290_PopulateGenreTypes.Designer.cs">
+      <DependentUpon>201706070300290_PopulateGenreTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706070401058_ReplaceGenreWtihGenreType.cs" />
+    <Compile Include="Migrations\201706070401058_ReplaceGenreWtihGenreType.Designer.cs">
+      <DependentUpon>201706070401058_ReplaceGenreWtihGenreType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706070405549_AdjustGenreTypeId.cs" />
+    <Compile Include="Migrations\201706070405549_AdjustGenreTypeId.Designer.cs">
+      <DependentUpon>201706070405549_AdjustGenreTypeId.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706080131241_AddMoreMovieGenres.cs" />
+    <Compile Include="Migrations\201706080131241_AddMoreMovieGenres.Designer.cs">
+      <DependentUpon>201706080131241_AddMoreMovieGenres.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\GenreType.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -279,6 +308,7 @@
     <Content Include="Views\Shared\_NavBar.cshtml" />
     <None Include="Views\Customers\Details.cshtml" />
     <None Include="Views\Customers\Index.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
     <None Include="Views\Movies\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -321,6 +351,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201706060331508_MadeBirthdateNullable.resx">
       <DependentUpon>201706060331508_MadeBirthdateNullable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706070204027_AddMovieDbSetToModel.resx">
+      <DependentUpon>201706070204027_AddMovieDbSetToModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706070219182_AddPropertiesToMovie.resx">
+      <DependentUpon>201706070219182_AddPropertiesToMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706070259474_AddPropertiesToMovie1.resx">
+      <DependentUpon>201706070259474_AddPropertiesToMovie1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706070300290_PopulateGenreTypes.resx">
+      <DependentUpon>201706070300290_PopulateGenreTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706070401058_ReplaceGenreWtihGenreType.resx">
+      <DependentUpon>201706070401058_ReplaceGenreWtihGenreType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706070405549_AdjustGenreTypeId.resx">
+      <DependentUpon>201706070405549_AdjustGenreTypeId.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706080131241_AddMoreMovieGenres.resx">
+      <DependentUpon>201706080131241_AddMoreMovieGenres.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
