@@ -20,13 +20,28 @@ namespace Vidly.Controllers
         {
             _context.Dispose();
         }
+
         public ViewResult Index()
         {
             var movies = _context.Movies.Include(m => m.GenreType).ToList();
 
-
             return View(movies);    
         }
+
+        public ViewResult MovieForm()
+        {
+            var genreTypes = _context.GenreTypes.ToList();
+            var viewModel = new MovieFormViewModel
+            {
+                GenreTypes = genreTypes
+            };
+            return View("MovieForm", viewModel);
+        }
+
+        //public ActionResult Save()
+        //{
+        //    return View();
+        //}
 
         public ActionResult Details(int id)
         {
