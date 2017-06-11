@@ -10,5 +10,15 @@ namespace Vidly.ViewModels
     {
         public IEnumerable<GenreType> GenreTypes { get; set; }
         public Movie Movie { get; set; }
+        public string Title
+        {
+            get
+            {
+                if (Movie != null)          // if movie already exist
+                    return "Edit Movie";
+
+                return "New Movie";         // movie doesn't yet exist
+            }
+        }
     }
 }

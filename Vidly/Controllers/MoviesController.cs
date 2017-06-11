@@ -29,7 +29,7 @@ namespace Vidly.Controllers
             return View(movies);    
         }
 
-        public ViewResult MovieForm()
+        public ViewResult New()
         {
             var genreTypes = _context.GenreTypes.ToList();
             var viewModel = new MovieFormViewModel
@@ -59,6 +59,21 @@ namespace Vidly.Controllers
             _context.SaveChanges();
 
             return RedirectToAction("Index", "Movies");
+        }
+
+        public ActionResult Edit(int id)
+        {
+            var movie = _context.Movies.SingleOrDefault(m => m.Id == id);
+
+            if (movie.Id == null)
+                return HttpNotFound();
+
+            var viewModel = new MovieFormViewModel
+            {
+                Movie = movie,
+                GenreTypes = _context.GenreTypes.ToList()
+            };
+            return View("MovieForm", viewModel);
         }
 
         public ActionResult Details(int id)
